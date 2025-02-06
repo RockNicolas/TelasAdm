@@ -1,6 +1,5 @@
 import { Social } from '../../components/social/social'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import '../../index.css'
+import { FaGithub, FaLinkedin, } from 'react-icons/fa'
 
 export function Home(){
   return(
@@ -12,7 +11,7 @@ export function Home(){
         <section className="bg-white mb-4 w-full py-2 rounded-lg select-none transition-transform hover:scale-105 cursor-pointer">
           <a>
             <p className="text-base md:text-lg">
-              Canal no Youtube
+              Blalal
             </p>
           </a>
         </section>
