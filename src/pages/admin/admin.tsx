@@ -5,5 +5,5 @@ export function Admin() {
         <h1>Pagina Admin</h1>
       </div>
     )
-  }
+}
   

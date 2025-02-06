@@ -5,5 +5,5 @@ export function Networks() {
         <h1>Paginas Redes Sociais</h1>
       </div>
     )
-  }
+}
   

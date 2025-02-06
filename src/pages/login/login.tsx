@@ -5,5 +5,5 @@ export function Login() {
         <h1>Pagina de Login</h1>
       </div>
     )
-  }
+}
   
