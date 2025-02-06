@@ -1,5 +1,6 @@
 import { Social } from '../../components/social/social'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import '../../index.css'
 
 export function Home(){
   return(
@@ -25,9 +26,7 @@ export function Home(){
             <FaLinkedin size={35} color="#FFF" />
           </Social>
         </footer>
-
       </main>
-
     </div>
   )
 }
