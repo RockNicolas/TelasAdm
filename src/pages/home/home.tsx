@@ -11,7 +11,7 @@ export function Home(){
         <section className="bg-white mb-4 w-full py-2 rounded-lg select-none transition-transform hover:scale-105 cursor-pointer">
           <a>
             <p className="text-base md:text-lg">
-              Blalal
+              Teste 
             </p>
           </a>
         </section>
