@@ -4,6 +4,7 @@ import { Login } from '.././src/pages/login/login'
 import { Admin } from '.././src/pages/admin/admin'
 import { Networks } from "./pages/networks/networks"
 import { NotFound } from "./pages/notfound/notfound"
+import './index.css'
 
 const router = createBrowserRouter([
     {
