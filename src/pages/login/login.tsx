@@ -1,6 +1,8 @@
 import { FormEvent, useState } from "react";
 import { Input } from "../../components/login/input";
 import { Logo } from "../../components/login/Logo";
+import { auth } from '../../serveces/fireBaseConnection'
+import { signInWithEmailAndPassword } from "firebase/auth";
 
 export function Login() {
   const [email, setEmail] = useState("");
@@ -9,10 +11,19 @@ export function Login() {
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
 
-    console.log({
-      email: email,
-      password: password
-    });
+    if(email === '' || password === ''){
+      alert("Preencha todos os campos!")
+      return;
+    }
+
+    signInWithEmailAndPassword(auth, email , password)
+    .then(() => {
+      console.log("Logado com sucesso")
+    })
+    .catch((error) => {
+      console.log("ERRO AP FAZER LOGIN: ")
+      console.log(error);
+    })
   }
 
   return (
