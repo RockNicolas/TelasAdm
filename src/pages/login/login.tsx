@@ -1,12 +1,14 @@
-import { FormEvent, useState } from "react";
+import { FormEvent, useState, } from "react";
 import { Input } from "../../components/login/input";
 import { Logo } from "../../components/login/Logo";
-import { auth } from '../../serveces/fireBaseConnection'
+import { auth } from '../../services/fireBaseConnection'
 import { signInWithEmailAndPassword } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 export function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
@@ -18,6 +20,7 @@ export function Login() {
 
     signInWithEmailAndPassword(auth, email , password)
     .then(() => {
+      navigate("/admin", {replace: true})
       console.log("Logado com sucesso")
     })
     .catch((error) => {

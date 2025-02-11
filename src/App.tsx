@@ -4,6 +4,7 @@ import { Login } from '.././src/pages/login/login'
 import { Admin } from '.././src/pages/admin/admin'
 import { Networks } from "./pages/networks/networks"
 import { NotFound } from "./pages/notfound/notfound"
+import { Private } from './protect/private'
 import './index.css'
 
 const router = createBrowserRouter([
@@ -17,11 +18,11 @@ const router = createBrowserRouter([
     },
     {
       path: '/admin',
-      element: <Admin/>
+      element: <Private><Admin/></Private>
     },
     {
       path: '/admin/social',
-      element: <Networks/>
+      element:  <Private><Networks/></Private>
     },
     {
       path: '*',
