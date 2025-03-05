@@ -1,5 +1,6 @@
-import { Social } from '../../components/social/social'
-import { FaGithub, FaLinkedin, } from 'react-icons/fa'
+import { Social } from '../../components/Social'
+
+import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa'
 
 export function Home(){
   return(
@@ -11,21 +12,27 @@ export function Home(){
         <section className="bg-white mb-4 w-full py-2 rounded-lg select-none transition-transform hover:scale-105 cursor-pointer">
           <a>
             <p className="text-base md:text-lg">
-              Teste 
+              Canal no Youtube
             </p>
           </a>
         </section>
 
         <footer className="flex justify-center gap-3 my-4">
-          <Social url="https://github.com/RockNicolas?tab=repositories">
-            <FaGithub size={35} color="#FFF" />
+          <Social url="https://facebook.com/sujeitoprogramador">
+            <FaFacebook size={35} color="#FFF" />
           </Social>
 
-          <Social url="https://www.linkedin.com/in/nicolas-rock-6015122a5/">
-            <FaLinkedin size={35} color="#FFF" />
+          <Social url="https://facebook.com/sujeitoprogramador">
+            <FaYoutube size={35} color="#FFF" />
+          </Social>
+
+          <Social url="https://instagram.com/sujeitoprogramador">
+            <FaInstagram size={35} color="#FFF" />
           </Social>
         </footer>
+
       </main>
+
     </div>
   )
 }
